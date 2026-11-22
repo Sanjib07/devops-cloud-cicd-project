@@ -10,5 +10,4 @@ def test_health_check():
     response = client.get("/health")
     assert response.status_code == 200
     assert b"Healthy" in response.data
-def test_intentional_failure():
-    assert 1 == 2   
+   
